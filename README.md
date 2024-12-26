@@ -61,7 +61,7 @@ This will open the `downloads` folder in the local directory.
 ## How It Works
 
 - **Batch Download**: The `index.js` handles the video download logic. You can integrate a download library like `youtube-dl-exec` or any other tool.
-- **Folder Opening**: The `utils/openDownloads.js` module is used to open the `downloads` folder automatically after the batch download completes. It works cross-platform (Windows, macOS, and Linux).
+- **Folder Opening**: The `utils/open.js` module is used to open the `downloads` folder automatically after the batch download completes. It works cross-platform (Windows, macOS, and Linux).
 
 ## Contributing
 
