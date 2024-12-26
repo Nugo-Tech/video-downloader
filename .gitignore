@@ -1,0 +1,12 @@
+# Ignore files in downloads folder
+downloads/
+
+# Ignore files in node_modules folder
+node_modules/
+
+# Ignore files in .env
+.env
+
+# Ignore files in package-lock.json
+package-lock.json
+
