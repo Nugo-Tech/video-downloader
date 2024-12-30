@@ -5,20 +5,20 @@ const path = require("path");
 const downloadsPath = path.resolve(__dirname, "./downloads");
 
 // Determine the command based on the OS
-const openCommand =
+const open =
   process.platform === "win32"
     ? `start "" "${downloadsPath}"`
     : process.platform === "darwin"
     ? `open "${downloadsPath}"`
     : `xdg-open "${downloadsPath}"`;
 
-// Execute the command
-exec(openCommand, (error) => {
-  if (error) {
-    console.error("Error opening the downloads folder:", error.message);
-  } else {
-    console.log("Downloads folder opened successfully.");
-  }
-});
-
-module.exports = open;
+// Export a function that executes the command when called
+module.exports = () => {
+  exec(open, (error) => {
+    if (error) {
+      console.error("Error opening the downloads folder:", error.message);
+    } else {
+      console.log("Downloads folder opened successfully.");
+    }
+  });
+};

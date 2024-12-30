@@ -67,8 +67,7 @@ const batchDownload = async (urls) => {
 // Example usage
 (async () => {
   const videoLinks = [
-    "https://www.facebook.com/watch/?v=338242595944638",
-    "https://www.facebook.com/watch/?v=1189146455658246",
+    "https://www.facebook.com/suwadiviyalk/videos/897348318686818",
     // Add more Facebook/YouTube video links here
   ];
 
